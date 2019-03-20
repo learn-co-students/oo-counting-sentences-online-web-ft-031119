@@ -1,5 +1,3 @@
-require 'pry'
-
 class String
 
   def sentence?
@@ -18,6 +16,5 @@ class String
     sentence_array = self.split(/(\. |\? |\! )/)
     sentence_array.delete_if {|value| value.length == 2}
     sentence_array.length 
-    #binding.pry 
   end
 end
